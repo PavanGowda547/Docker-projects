@@ -1,0 +1,9 @@
+# docker compose up - to create the container
+# docker compose down - to delete the container
+services:
+  app:
+    image: python:3.14
+    ports:
+      - 8000:8000
+      - 3000:8000
+    command: python -m http.server 8000
