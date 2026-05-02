@@ -1,0 +1,18 @@
+#Use official Python base image 
+FROM python:3.11-slim
+
+# create a working directory for the code inside the container
+WORKDIR /code
+
+# copy the requirements file first for better caching
+COPY ./requirements.txt /code/requirements.txt
+
+# Install the dependencies
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+# Copy the app folder into the container 
+COPY ./app /code/app
+
+# Command to run the uvicorn server
+# --host 0.0.0.0 is crucial to allow external access
+CMD ["uvicorn","app.main:app","--host","0.0.0.0","--port","80"]
