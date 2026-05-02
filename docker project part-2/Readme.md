@@ -209,31 +209,6 @@ Restarts a stopped container without needing to `docker run` again. All your set
 
 ---
 
-## 📸 Screenshots
-
-> 📷 *Take and add the following screenshots to a `screenshots/` folder to complete this README:*
-
-| File | What to capture |
-|------|----------------|
-| `01-docker-build.png` | Terminal output of `docker build` completing successfully |
-| `02-docker-run-ps.png` | Terminal showing `docker ps` with the container in "Up" status |
-| `03-api-browser.png` | Browser showing the JSON response at `localhost:8080` |
-| `04-docker-logs.png` | Terminal output of `docker logs fastapi-container` showing Uvicorn startup |
-| `05-docker-stop-start.png` | Terminal showing `docker stop` then `docker start` then `docker ps` confirming it's back up |
-| `06-docker-ps-a.png` | Terminal showing `docker ps -a` listing all containers including stopped ones |
-
-```
-screenshots/
-├── 01-docker-build.png
-├── 02-docker-run-ps.png
-├── 03-api-browser.png
-├── 04-docker-logs.png
-├── 05-docker-stop-start.png
-└── 06-docker-ps-a.png
-```
-
----
-
 ## ⚠️ Notes
 
 - Make sure Docker Desktop is running before executing any `docker` commands
