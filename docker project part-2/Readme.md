@@ -216,7 +216,3 @@ Restarts a stopped container without needing to `docker run` again. All your set
 - The `python:3.11-slim` image is used over the full Python image to keep the container size small — good practice for production-like setups
 
 ---
-
-## 👤 Author
-
-Built as part of a Docker and containerisation learning project.
