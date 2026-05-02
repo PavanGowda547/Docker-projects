@@ -1,8 +1,14 @@
 # docker compose up - to create the container
 # docker compose down - to delete the container
+# docker compose build - to create the image using a Dockerfile, with this command you need to run the "docker compose up" and "docker compose dwon" again and again
+# docker compose up --build - this will run and build the container by itself in just one command
+# docker compose run app /bin/bash - a live interactive terminal where you can make chnages and or correct things in the environment if required.
 services:
   app:
-    image: python:3.14
+    # image: python:3.14
+    build:
+      context: .
+      dockerfile: Dockerfile 
     ports:
       - 8000:8000
       - 3000:8000
